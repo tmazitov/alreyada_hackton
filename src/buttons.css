@@ -1,0 +1,27 @@
+@import url('./style.css');
+
+.button {
+	border-radius: 16px;
+}
+
+.primary{
+	color: var(--van-text-color);
+	border: none;
+	transition: background 300ms linear;
+	background: var(--gradient);
+}
+
+.primary:hover{
+	background-position: 110px;
+}
+
+.outlined{
+	background: transparent;
+	border: 1px solid white;
+	color: inherit;
+	transition: border-color 300ms;
+}
+
+.outlined:hover{
+	border-color: var(--primary); 
+}
