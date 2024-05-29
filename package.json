@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
+	"predeploy" : "yarn build",
+	"deploy" : "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "vant": "^4.9.0",
     "vue": "^3.4.21"
   },
