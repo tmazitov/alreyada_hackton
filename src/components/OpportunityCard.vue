@@ -51,12 +51,11 @@ export default {
 }
 
 
-.card:hover {
+.opp-card:hover {
 	box-shadow: 0 2px 25px var(--primary);
-
 }
 
-.card:hover > .card-content > .card-header {
+.opp-card:hover > .card-content > .card-header {
 	color: var(--primary);
 }
 
@@ -96,16 +95,26 @@ export default {
 	height: auto;
 	transition: color 0.3s;
 }
-.card:hover > .card-image {
+.opp-card:hover > .card-image {
 
 	color: var(--primary);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 	.opp-card {
 		max-width: 100%;
 	}
 	.active{
+		color: var(--primary);
+	}
+	.opp-card:active {
+		box-shadow: 0 2px 25px var(--primary);
+	}
+	.opp-card:activeg > .card-image {
+
+		color: var(--primary);
+	}
+	.opp-card:active > .card-image {
 		color: var(--primary);
 	}
 }

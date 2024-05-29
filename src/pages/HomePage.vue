@@ -86,7 +86,7 @@ export default {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 	.event-name {
 		line-height: 1.2;
 	}
