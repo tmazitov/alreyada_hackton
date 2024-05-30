@@ -15,7 +15,7 @@ export default {
 			default: false,
 		}
 	},
-	setup(props, ctx){
+	setup(props){
 		const disabled = computed(() => props.disabled)
 
 		return {
