@@ -57,9 +57,11 @@ export default {
 	.content{
 		align-items: center;
 	}
-	.speaker:hover > .speaker__info > .speaker__name {
-		color: var(--primary);
-	}
+
+}
+
+.speaker:hover > .speaker__info > .speaker__name {
+	color: var(--primary);
 }
 
 .speaker{
