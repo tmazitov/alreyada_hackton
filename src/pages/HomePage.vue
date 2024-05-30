@@ -1,5 +1,5 @@
 <template>
-	<div class="page">
+	<div class="page" id="home">
 		<div class="content">
 			<div class="event-greeting">
 				<div class="event-name">
@@ -19,10 +19,10 @@
 				<van-button class="button primary" @click="onOpenRegForm">
 					Registration
 				</van-button>
-				<van-button class="button outlined" icon="notes-o">
+				<van-button class="button outlined" icon="notes-o" @click="navigate('map')">
 					Map
 				</van-button>
-				<van-button class="button outlined" icon="friends-o">
+				<van-button class="button outlined" icon="friends-o" @click="navigate('speakers')">
 					Speakers
 				</van-button>
 				<van-button class="button outlined">
@@ -39,6 +39,7 @@
 
 <script lang="ts">
 import InfiniteScrollingLine from '../components/InfiniteScrollingLine.vue';
+import navigate from '../type/navigator';
 
 export default {
 	name : "HomePage",
@@ -66,10 +67,10 @@ export default {
 		]
 
 		const onOpenRegForm = () => ctx.emit('update:showRegForm', true)
-
 		return {
 			onOpenRegForm,
-			messages
+			messages,
+			navigate,
 		}
 	}
 }

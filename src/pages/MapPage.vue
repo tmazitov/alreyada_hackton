@@ -1,5 +1,5 @@
 <template>
-	<div class="page">
+	<div class="page" id="map">
 		<div class="content">
 			<div class="content-header">
 				Event Map
