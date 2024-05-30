@@ -83,7 +83,7 @@ export default {
 	width: 100%;
 	height: 100%;
 	max-height: 250px;
-	min-width: 200px;
+	min-width: 220px;
 	display: flex;
 	flex-direction: column;
 	border: 1px solid var(--font-color);

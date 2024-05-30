@@ -6,6 +6,9 @@
 					<div>{{`Eco`}}</div>
 					<div>{{`Scape`}}</div>
 				</div>
+				<div class="event-description" style="font-size: 1.4em;">
+					Welcome to the Al Reyada Event!
+				</div>
 				<div class="event-description">
 					Our Educational Escape Room presents a series of THOUGHTFUL challenges dedicated to 
 					<a style="color:var(--primary);text-decoration: underline;">better understanding sustainable happens</a>
