@@ -26,7 +26,6 @@ export default {
 		}
 	},
 	setup(props:any) {
-
 		return {
 			opp: props.opp
 		}

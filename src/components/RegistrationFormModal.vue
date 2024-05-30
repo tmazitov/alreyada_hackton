@@ -54,7 +54,7 @@
 							</div>
 						</div>
 
-						<BaseButton label="Home page" @click="closeHandler"/>
+						<BaseButton label="Home page" @click="finish"/>
 					</div>
 				</transition>
 			</div>
@@ -112,6 +112,17 @@ export default {
 			setTimeout(() => data.isSuccess = true, 1400);
 		}
 
+		const finish = () => {
+			closeHandler()
+			setTimeout(() => {
+				data.isSubmitted = false
+				data.isSuccess = false
+				form.name = ""
+				form.email = ""
+				form.allow = false
+			}, 300);
+		}
+
 		return {
 			form,
 			show,
@@ -119,6 +130,7 @@ export default {
 			isFormValid,
 			closeHandler,
 			submit,
+			finish,
 		}
 	}
 };
