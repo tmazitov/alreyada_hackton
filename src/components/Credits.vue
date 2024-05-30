@@ -1,7 +1,7 @@
 <template>
 <div class="credits"> 
 	<div class="content">
-		<div class="name">Designed by Timur Mazitov 2024</div>
+		<div class="name">Designed by Timur Mazitov</div>
 		<div class="purpose">For Al Reyada Sustainability and Culture Seminar 2024</div>
 		<div class="earth">
 			<span class="iconify" data-icon="fluent:earth-48-regular" data-width="64" data-height="64"></span>

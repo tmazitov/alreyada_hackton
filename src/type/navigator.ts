@@ -5,7 +5,7 @@ function navigate(pageId: string) {
 
 	const pageRect = page.getBoundingClientRect();
 	scrollTo({
-		top: pageRect.top,
+		top: pageRect.top + window.scrollY - 40,
 		behavior: 'smooth'
 	});
 }
