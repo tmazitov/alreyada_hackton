@@ -7,7 +7,7 @@
 					<div>{{`Scape`}}</div>
 				</div>
 				<div class="event-description">
-					Let's explore the sustainability and culture together!
+					Our Educational Escape Room presents a series of THOUGHTFUL challenges dedicated to better understanding sustainable happens
 				</div>
 			</div>
 
@@ -19,7 +19,7 @@
 					Map
 				</van-button>
 				<van-button class="button outlined" icon="friends-o">
-					Spickers
+					Speakers
 				</van-button>
 				<van-button class="button outlined">
 					More
@@ -54,10 +54,10 @@ export default {
 	},
 	setup(_, ctx){
 		const messages = [
-			"Hackton",
-			"Project",
 			"Cool",
 			"Student",
+			"Hackathon",
+			"Project",
 			"Event",
 		]
 
@@ -91,9 +91,9 @@ export default {
 }
 
 .event-description {
-
+	width: 50%;
 	font-weight: 300;
-	font-size: 1.3em;
+	/* font-size: 1.1em; */
 	color: rgb(164, 164, 164);
 }
 
@@ -102,6 +102,11 @@ export default {
 	gap: 16px;
 }
 
+@media (max-width: 800px) {
+	.event-description{
+		width: 100%;
+	}
+}
 
 @media (max-width: 450px) {
 	.event-name {
