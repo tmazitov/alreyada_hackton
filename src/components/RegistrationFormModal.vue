@@ -125,6 +125,7 @@ export default {
 				data.isSuccess = false
 				form.name = ""
 				form.email = ""
+				form.nationality = ""
 				form.allow = false
 			}, 300);
 		}
@@ -152,8 +153,8 @@ export default {
 }
 
 .form-container{
-	width: fit-content;
-	height: fit-content;
+	width: 335px;
+	height: 400px;
 	background-color: var(--background);
 	border-radius: 16px;
 }
@@ -217,11 +218,6 @@ export default {
 	padding: 4px;
 	box-sizing: border-box;
 }
-
-.form-header__back:hover {
-	background-color: var(--background-light);
-}
-
 .fields{
 	display: flex;
 	flex-direction: column;

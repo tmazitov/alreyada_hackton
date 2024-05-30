@@ -52,6 +52,7 @@ export default {
 	color: white;
 	height: 100%;
 	display: flex;
+	cursor: pointer;
 	justify-content: center;
 	align-items: center;
 }
