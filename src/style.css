@@ -13,11 +13,13 @@
 	--font-color: rgba(255, 255, 255, 0.87); 
 	--background: #242424;
 	--background-light: #545454;
-	/* --primary:  #ABE188;
-	--primary-light:  #d6f5c4; */
+	--primary:  #ABE188;
+	--primary-light:  #d6f5c4;
+	--primary-middle: #bdeb9f;
+	/* --primary-middle: rgba(247,189,196,1);
 	--primary:  rgb(238,156,167);
-	--primary-light:  rgba(255,221,225,1);
-	--gradient:linear-gradient(45deg, var(--primary) 1%, rgba(247,189,196,1) 42%, var(--primary-light) 79%);
+	--primary-light:  rgba(255,221,225,1); */
+	--gradient:linear-gradient(45deg, var(--primary) 1%, var(--primary-middle) 42%, var(--primary-light) 79%);
 	color: var(--font-color);
 	background: var(--background);
 }

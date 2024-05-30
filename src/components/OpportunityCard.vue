@@ -1,5 +1,5 @@
 <template>
-<div class="opp-card">
+<div class="opp-card" v-bind:class="{active:isActive}">
 	<div class="card-image" v-bind:class="{active:isActive}">
 		<span class="iconify" :data-icon="opp.image" data-width="128" data-height="128"></span>
 	</div>
@@ -104,7 +104,7 @@ export default {
 	.opp-card {
 		max-width: 100%;
 	}
-	.active{
+	:not(.opp-card).active{
 		color: var(--primary);
 	}
 	.opp-card:active {
@@ -116,6 +116,21 @@ export default {
 	}
 	.opp-card:active > .card-image {
 		color: var(--primary);
+	}
+	.opp-card.active {
+		/* color: var(--font-color); */
+		box-shadow: 0 2px 25px var(--primary);
+	}
+
+	.opp-card:hover {
+		box-shadow: none;
+	}
+
+	.opp-card:hover > .card-content > .card-header {
+		color: var(--font-color);
+	}
+	.opp-card:hover > .card-image {
+		color: var(--font-color);
 	}
 }
 
