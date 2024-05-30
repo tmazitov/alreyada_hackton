@@ -3,10 +3,10 @@
 		<div class="content">
 			<div class="event-greeting">
 				<div class="event-name">
-					Al Reyada Event!
+					EcoScape 
 				</div>
 				<div class="event-description">
-					Welcome to the Al Reyada Event! This is a sample event page.
+					Let's explore the sustainability and culture together!
 				</div>
 			</div>
 
