@@ -77,6 +77,7 @@ export default {
 	font-size: 1.5em;
 	font-weight: 300;
 	cursor: pointer;
+	user-select: none;
 	transition: color 0.3s;
 }
 .speakers-container{
@@ -102,7 +103,8 @@ export default {
 .speaker__university{
 	font-size: 0.8em;
 	font-weight: 300;
-	color: gray
+	color: gray;
+	user-select: none;
 }
 
 .speaker:hover > .speaker__photo{
