@@ -25,9 +25,9 @@
 				<van-button class="button outlined" icon="friends-o" @click="navigate('speakers')">
 					Speakers
 				</van-button>
-				<van-button class="button outlined">
+				<!-- <van-button class="button outlined">
 					More
-				</van-button>
+				</van-button> -->
 			</div>
 
 			<div class="event-opp">
