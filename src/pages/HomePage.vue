@@ -7,7 +7,8 @@
 					<div>{{`Scape`}}</div>
 				</div>
 				<div class="event-description">
-					Our Educational Escape Room presents a series of THOUGHTFUL challenges dedicated to better understanding sustainable happens
+					Our Educational Escape Room presents a series of THOUGHTFUL challenges dedicated to 
+					<a style="color:var(--primary);text-decoration: underline;">better understanding sustainable happens</a>
 				</div>
 			</div>
 
@@ -116,6 +117,12 @@ export default {
 	.event-hot-buttons{
 		flex-wrap: wrap;
 	}
+}
+
+.event-greeting{
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 }
 
 </style>
