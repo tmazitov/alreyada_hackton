@@ -16,6 +16,7 @@
 	--primary:  #ABE188;
 	--primary-light:  #d6f5c4;
 	--primary-middle: #bdeb9f;
+	--primary-hard: #96C577;
 	/* --primary-middle: rgba(247,189,196,1);
 	--primary:  rgb(238,156,167);
 	--primary-light:  rgba(255,221,225,1); */
@@ -39,9 +40,11 @@ body {
 	a:hover {
 		color: #747bff;
 	}
-	button {
-		background-color: #f9f9f9;
-	}
+}
+
+
+.van-checkbox__icon--checked .van-icon {
+	color: var(--background);
 }
 
 .page{

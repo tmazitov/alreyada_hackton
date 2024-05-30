@@ -1,18 +1,26 @@
 <template>
-	<van-button class="button base" type="primary" size="large">{{label}}</van-button>
+	<van-button class="button base" :disabled="disabled" type="primary" size="large">{{label}}</van-button>
 </template>
 
-<script >
+<script lang="ts">
+import { computed } from 'vue';
 export default {
 	name: 'BaseButton',
 	props: {
 		label: {
 			type: String,
+		},
+		disabled: {
+			type: Boolean,
+			default: false,
 		}
 	},
 	setup(props, ctx){
+		const disabled = computed(() => props.disabled)
+
 		return {
-			label: props.label
+			label: props.label,
+			disabled,
 		}
 	}
 };
