@@ -53,6 +53,7 @@ export default {
 	height: 100%;
 	display: flex;
 	cursor: pointer;
+	user-select: none;
 	justify-content: center;
 	align-items: center;
 }
