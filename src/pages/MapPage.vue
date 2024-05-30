@@ -92,6 +92,7 @@ export default {
 	padding: 16px;
 	box-sizing: border-box;
 	gap: 1em;
+	transition: box-shadow .2s;
 }
 
 @media (max-width: 800px){
