@@ -60,7 +60,7 @@ export default {
 	--van-field-label-color: var(--font-color);
 	--van-field-input-text-color: var(--font-color);
 	--van-field-placeholder-text-color: gray;
-	--van-field-label-width: 3em;
+	/* --van-field-label-width: 6em; */
 	font-family: 'Rubik';
 }
 

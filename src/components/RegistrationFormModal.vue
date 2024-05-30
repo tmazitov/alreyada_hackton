@@ -15,8 +15,9 @@
 						</div>
 					</div>
 					<div class="fields">
-						<BaseInput v-model:value="form.name" label="Name" placeholder="Your name" autofocus/>
-						<BaseInput v-model:value="form.email" label="Email"  placeholder="Your email"/>
+						<BaseInput v-model:value="form.name" label="Name" placeholder="Your Name" autofocus/>
+						<BaseInput v-model:value="form.email" label="Email"  placeholder="Your Email"/>
+						<BaseInput v-model:value="form.nationality" label="Nationality" placeholder="Your Nationality"/>
 						<div class="form-allow">
 							<van-checkbox v-model="form.allow" shape="round" checked-color="var(--primary-hard)">
 								Сonsent to the processing of personal data
@@ -70,6 +71,7 @@ import BaseButton from './BaseButton.vue';
 type Form = {
 	name: string,
 	email: string,
+	nationality: string,
 	allow: boolean,
 }
 
@@ -98,10 +100,14 @@ export default {
 		const form = reactive<Form>({
 			name: "",
 			email: "",
+			nationality: "",
 			allow: false,
 		})
 		const isFormValid = computed(() => {
-			return form.name.length > 0 && form.email.length > 0 && form.allow
+			return form.name.length > 0 && 
+					form.email.length > 0 && 
+					form.nationality.length > 0 && 
+					form.allow
 		})
 		const closeHandler = () => {
 			ctx.emit('update:show', false)
@@ -109,7 +115,7 @@ export default {
 
 		const submit = () => {
 			data.isSubmitted = true
-			setTimeout(() => data.isSuccess = true, 1400);
+			setTimeout(() => data.isSuccess = true, 2200);
 		}
 
 		const finish = () => {
@@ -146,11 +152,10 @@ export default {
 }
 
 .form-container{
-	width: 360px;
-	height: 360px;
+	width: fit-content;
+	height: fit-content;
 	background-color: var(--background);
 	border-radius: 16px;
-	
 }
 
 .form {
@@ -172,7 +177,7 @@ export default {
 
 @media (max-width: 450px){
 	.form-container {
-		width: calc(100% - 48px);
+		/* width: calc(100% - 48px); */
 	}
 	.form-header__back{
 		width: 2.4em;
