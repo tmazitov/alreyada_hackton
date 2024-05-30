@@ -15,7 +15,7 @@
 					Registration
 				</van-button>
 				<van-button class="button outlined" icon="notes-o">
-					Events
+					Map
 				</van-button>
 				<van-button class="button outlined" icon="friends-o">
 					Spickers

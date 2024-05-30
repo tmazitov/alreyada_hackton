@@ -87,7 +87,6 @@ export default {
 	color: rgb(36, 36, 36);
 	text-align: center;
 	width: 100%;
-	margin-bottom: px;
 }
 
 .page{

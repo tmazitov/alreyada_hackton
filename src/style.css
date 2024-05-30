@@ -80,6 +80,13 @@ body {
 	padding-bottom: 70px;
 }
 
+.content-header{
+	font-size: 3em;
+	font-family: "DM Serif Display", serif;
+	color: var(--font-color);
+	text-align: center;
+	width: 100%;
+}
 
 @media (max-width: 450px) {
 	.content {
