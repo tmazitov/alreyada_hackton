@@ -91,7 +91,7 @@ export default {
 }
 
 .page{
-	background: rgb(236, 236, 236);
+	background: var(--background-light);
 }
 
 @media (max-width: 800px) {

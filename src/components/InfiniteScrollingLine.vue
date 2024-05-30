@@ -1,11 +1,11 @@
 <template>
-  <div class="scroll-container">
-    <div class="scroll-content" :style="animationStyle">
-      <span v-for="(message, index) in repeatedMessages" :key="index" class="scroll-message">
-        {{ message }}
-      </span>
-    </div>
-  </div>
+	<div class="scroll-container">
+		<div class="scroll-content" :style="animationStyle">
+			<span v-for="(message, index) in repeatedMessages" :key="index" class="scroll-message">
+				{{ message }}
+			</span>
+		</div>
+	</div>
 </template>
 
 <script lang="ts">

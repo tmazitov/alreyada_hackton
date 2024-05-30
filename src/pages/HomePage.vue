@@ -11,7 +11,7 @@
 			</div>
 
 			<div class="event-hot-buttons">
-				<van-button class="button primary">
+				<van-button class="button primary" @click="onOpenRegForm">
 					Registration
 				</van-button>
 				<van-button class="button outlined" icon="notes-o">
@@ -37,10 +37,21 @@ import InfiniteScrollingLine from '../components/InfiniteScrollingLine.vue';
 
 export default {
 	name : "HomePage",
+	model: {
+		prop: 'showRegForm',
+		event: 'update:showRegForm',
+	},
+
+	props : {
+		showRegForm: {
+			type: Boolean,
+			required: true,
+		}
+	},
 	components: {
 		InfiniteScrollingLine,
 	},
-	setup(){
+	setup(_, ctx){
 		const messages = [
 			"Hackton",
 			"Project",
@@ -49,7 +60,10 @@ export default {
 			"Event",
 		]
 
+		const onOpenRegForm = () => ctx.emit('update:showRegForm', true)
+
 		return {
+			onOpenRegForm,
 			messages
 		}
 	}

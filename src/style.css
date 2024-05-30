@@ -12,7 +12,7 @@
 	-moz-osx-font-smoothing: grayscale;
 	--font-color: rgba(255, 255, 255, 0.87); 
 	--background: #242424;
-	--background-light: #545454;
+	--background-light: rgb(236, 236, 236);
 	--primary:  #ABE188;
 	--primary-light:  #d6f5c4;
 	--primary-middle: #bdeb9f;
@@ -34,7 +34,7 @@ body {
 	:root {
 		--font-color: #213547;
 		--background: #ffffff;
-		--background-light: #545454;
+		--background-light: rgb(236, 236, 236);
 	}
 	a:hover {
 		color: #747bff;
