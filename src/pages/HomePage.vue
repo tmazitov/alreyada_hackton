@@ -3,7 +3,8 @@
 		<div class="content">
 			<div class="event-greeting">
 				<div class="event-name">
-					EcoScape 
+					<div>{{`Eco`}}</div>
+					<div>{{`Scape`}}</div>
 				</div>
 				<div class="event-description">
 					Let's explore the sustainability and culture together!
@@ -77,7 +78,9 @@ export default {
 .event-name {
 	font-size: 5.5em;
 	font-family: "DM Serif Display", serif;
-	width: fit-content
+	width: fit-content;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .event-opp{
