@@ -64,7 +64,7 @@ export default {
 	font-size: 1.5em;
 	transition: color 0.3s;
 	font-family: "DM Serif Display", serif;
-	color: white;
+	color: var(--font-color);
 	user-select: none;
 
 	white-space: nowrap;
