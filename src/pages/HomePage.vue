@@ -11,7 +11,7 @@
 				</div>
 				<div class="event-description">
 					Our Educational Escape Room presents a series of THOUGHTFUL challenges dedicated to 
-					<a style="color:var(--primary);text-decoration: underline;">better understanding sustainable happens</a>
+					<a class="action">better understanding sustainable happens</a>
 				</div>
 			</div>
 
@@ -100,6 +100,21 @@ export default {
 	font-weight: 300;
 	/* font-size: 1.1em; */
 	color: rgb(164, 164, 164);
+}
+
+.action{
+	color: var(--primary);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+@media (prefers-color-scheme: light) {
+	.event-description{
+		color: rgb(100, 100, 100);
+	}
+	.action {
+		color: var(--primary-hard);
+	}
 }
 
 .event-hot-buttons{
