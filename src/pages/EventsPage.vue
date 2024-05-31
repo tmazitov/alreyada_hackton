@@ -47,7 +47,8 @@ export default {
 			const closestElement = distances.findIndex((distance) => {
 				return distance === Math.min(...distances);
 			});
-			if (data.active !== closestElement)
+
+			if (data.active === closestElement)
 				return
 			data.active = closestElement;
 		};
