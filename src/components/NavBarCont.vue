@@ -49,7 +49,7 @@ export default {
 }
 
 .nav-bar__item {
-	color: white;
+	color: var(--font-color);
 	height: 100%;
 	display: flex;
 	cursor: pointer;

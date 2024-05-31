@@ -24,6 +24,12 @@ export default {
 	position: relative;
 }
 
+@media (prefers-color-scheme: light) {
+	.credits{
+		background: #f0f0f0;
+	}
+}
+
 .earth{
 	position: absolute;
 	top: 16px;
@@ -57,6 +63,7 @@ export default {
 	gap: 4px;
 	height: 100%;
 	padding-bottom: 0;
+	color: var(--font-color);
 }
 
 .name{
